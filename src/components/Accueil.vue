@@ -4,7 +4,7 @@
       <div class="statistique">
         <div>
           <span class="badge good">Stable</span>
-          <h1 id="titre-hero">Bienvenue 👋 — voici l’état de votre frigo</h1>
+          <h1>Bienvenue 👋 — voici l’état de votre frigo</h1>
           <p class="meta">
             Suivez vos produits, anticipez les dates de péremption et gérez vos
             courses en un clin d’œil.
@@ -32,11 +32,44 @@
         </div>
       </div>
 
-      <div class="etat">Etat</div>
+      <div class="etat">
+        <h2>⏳ Expirations à venir</h2>
+
+        <div class="produits">
+          <Produit
+            nom="Yaourt"
+            description="Lorem ipsium"
+            expiration="Jour-J"
+            quantity="250g"
+          />
+          <Produit
+            nom="Yaourt"
+            description="Lorem ipsium"
+            expiration="Jour-J"
+            quantity="250g"
+          />
+          <Produit
+            nom="Yaourt"
+            description="Lorem ipsium"
+            expiration="Jour-J"
+            quantity="250g"
+          />
+          <Produit
+            nom="Yaourt"
+            description="Lorem ipsium"
+            expiration="Jour-J"
+            quantity="250g"
+          />
+          <a href="#" class="btn"
+            >🍽️ Supprimer les produits expirant aujourd’hui</a
+          >
+        </div>
+      </div>
     </section>
   </main>
 </template>
 
 <script setup>
+import Produit from "./card-produits/Produit.vue";
 import Card from "./card-stats/Card.vue";
 </script>

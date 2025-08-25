@@ -16,15 +16,25 @@
       </div>
     </div> -->
     <div class="header-actions">
-      <Boutton nomBoutton="Accueil" remixicon="ri-home-2-line" />
+      <Boutton nomBoutton="Accueil" link="/" remixicon="ri-home-2-line" />
       <Boutton
         nomBoutton="Liste de mes courses"
         remixicon="ri-file-list-3-line"
       />
-      <Boutton nomBoutton="Inventaire" remixicon="ri-cloudy-line" />
-      <Boutton nomBoutton="Liste de courses" remixicon="ri-home-2-line" />
+      <Boutton
+        nomBoutton="Inventaire"
+        link="/inventaire"
+        remixicon="ri-cloudy-line"
+      />
+      <Boutton
+        nomBoutton="Liste de courses"
+        link="/courses"
+        remixicon="ri-home-2-line"
+      />
     </div>
   </header>
+
+  <div class="big-header"></div>
 </template>
 
 <script setup>
