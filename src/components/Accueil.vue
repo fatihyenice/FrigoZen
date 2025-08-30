@@ -66,10 +66,18 @@
         </div>
       </div>
     </section>
+
+    <section class="liste--tries">
+      <div class="liste-courses">
+        <Listes />
+      </div>
+      <div class="tries"></div>
+    </section>
   </main>
 </template>
 
 <script setup>
 import Produit from "./card-produits/Produit.vue";
 import Card from "./card-stats/Card.vue";
+import Listes from "./liste-courses/Listes.vue";
 </script>

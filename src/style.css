@@ -140,7 +140,9 @@ body {
   box-shadow: 0 2px 1px 1px var(--shadow-color);
 }
 
-.etat {
+.etat,
+.liste-courses,
+.tries {
   background: var(--card-bg);
   border: 1px solid rgba(148, 163, 184, 0.15);
   border-radius: 16px;
@@ -301,7 +303,7 @@ body {
   inset: 0;
   background: #ecf0f1;
   color: var(--text-primary);
-  border-radius: 14px;
+  border-radius: 10px;
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.2s;
@@ -340,6 +342,61 @@ body {
 
 .quantity-produit {
   font-weight: 600;
+}
+
+.liste--tries {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 9px;
+}
+
+.container-courses {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.course {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.course input[type="checkbox"] {
+  display: none;
+}
+
+.course input[type="checkbox"] + label {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.course input[type="checkbox"]:hover + label {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  width: 100%;
+  cursor: pointer;
+  background: #dedede;
+}
+
+.course input[type="checkbox"]:checked + label {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  background: #6ab04c;
+  color: #fff;
+  width: 100%;
+}
+
+.course input[type="checkbox"]:checked + label:before {
+  content: "✅ ";
 }
 
 .footer {
@@ -394,6 +451,11 @@ body {
 @media (min-width: 900px) {
   .header-glass {
     padding: 1rem 2rem;
+  }
+
+  .liste--tries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .budget-item span {
